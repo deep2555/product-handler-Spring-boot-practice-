@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import com.deepanshu.boot.DTO.ProductDTO;
 import com.deepanshu.boot.entity.Category;
 import com.deepanshu.boot.entity.Product;
+import com.deepanshu.boot.exception.CategoryNotFoundException;
 import com.deepanshu.boot.mapper.ProductMapper;
 import com.deepanshu.boot.repository.CategoryRepository;
 import com.deepanshu.boot.repository.ProductRepository;
@@ -24,8 +25,8 @@ public class ProductService {
 	// create product
 	public ProductDTO createProduct(ProductDTO productDto) {
 		// check the category present in database
-		Category category = categoryRepository.findById(productDto.getCategoryId())
-				.orElseThrow(() -> new RuntimeException("category not found"));
+		Category category = categoryRepository.findById(productDto.getCategoryId()).orElseThrow(
+				() -> new CategoryNotFoundException("category " + productDto.getCategoryId() + " not found"));
 		// mapper from dto to entity
 		Product dtoToEntity = ProductMapper.dtoToEntity(productDto, category);
 		dtoToEntity = productRepository.save(dtoToEntity);

@@ -1,12 +1,14 @@
 package com.deepanshu.boot.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.deepanshu.boot.DTO.CategoryDTO;
 import com.deepanshu.boot.entity.Category;
+import com.deepanshu.boot.exception.CategoryAlreadyExistsException;
 import com.deepanshu.boot.mapper.CategoryMapper;
 import com.deepanshu.boot.repository.CategoryRepository;
 
@@ -18,6 +20,12 @@ public class CategoryService {
 
 	// create category
 	public CategoryDTO createCategory(CategoryDTO categoryDTO) {
+		// check the category already ppresent or not
+		Optional<Category> categoryPresent = categoryRepository.findByCategoryName(categoryDTO.getCategoryName());
+		if(categoryPresent.isPresent()) {
+			throw new CategoryAlreadyExistsException("Category "+categoryDTO.getCategoryName() + "already present");
+		}
+		
 		Category dtoTOEntity = CategoryMapper.dtoTOEntity(categoryDTO);
 		dtoTOEntity = categoryRepository.save(dtoTOEntity);
 		return CategoryMapper.entityTODto(dtoTOEntity);
