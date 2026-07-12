@@ -16,6 +16,11 @@ import org.springframework.web.bind.annotation.RestController;
 import com.deepanshu.boot.DTO.CategoryDTO;
 import com.deepanshu.boot.service.CategoryService;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
+@Tag(
+		name = "Category Rest Api Curd Operation",
+		description = "Create, get, update, Delete operation"
+		)
 @RestController
 @RequestMapping("/api/category")
 public class CategoryController {

@@ -16,6 +16,13 @@ import org.springframework.web.bind.annotation.RestController;
 import com.deepanshu.boot.DTO.ProductDTO;
 import com.deepanshu.boot.service.ProductService;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
+
+@Tag(
+		name = "Product Rest Api Curd Operation",
+		description = "Create, get, update, Delete operation"
+		)
+
 @RestController
 @RequestMapping("/api/product")
 public class ProductController {
