@@ -1,0 +1,162 @@
+2026-07-19 21:25:52.269 [background-preinit] INFO  o.h.validator.internal.util.Version -
+				HV000001: Hibernate Validator 8.0.1.Final
+2026-07-19 21:25:52.337 [restartedMain] INFO  c.d.boot.ProductHandlerApplication -
+				Starting ProductHandlerApplication using Java 19.0.1 with PID 20500 (C:\Users\deepa\git\product-handler-Spring-boot-practice-\productHandler\target\classes started by deepa in C:\Users\deepa\git\product-handler-Spring-boot-practice-\productHandler)
+2026-07-19 21:25:52.339 [restartedMain] INFO  c.d.boot.ProductHandlerApplication -
+				No active profile set, falling back to 1 default profile: "default"
+2026-07-19 21:25:52.433 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -
+				Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-19 21:25:52.434 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -
+				For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-19 21:25:53.776 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+				Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-19 21:25:53.876 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+				Finished Spring Data repository scanning in 85 ms. Found 3 JPA repository interfaces.
+2026-07-19 21:25:54.899 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+				Tomcat initialized with port 8080 (http)
+2026-07-19 21:25:54.906 [restartedMain] INFO  o.a.c.core.AprLifecycleListener -
+				An older version [2.0.3] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+2026-07-19 21:25:54.906 [restartedMain] INFO  o.a.c.core.AprLifecycleListener -
+				Loaded Apache Tomcat Native library [2.0.3] using APR version [1.7.2].
+2026-07-19 21:25:54.945 [restartedMain] INFO  o.a.c.core.AprLifecycleListener -
+				OpenSSL successfully initialized [OpenSSL 3.0.8 7 Feb 2023]
+2026-07-19 21:25:54.957 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-19 21:25:54.960 [restartedMain] INFO  o.a.catalina.core.StandardService -
+				Starting service [Tomcat]
+2026-07-19 21:25:54.960 [restartedMain] INFO  o.a.catalina.core.StandardEngine -
+				Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-07-19 21:25:55.053 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2026-07-19 21:25:55.053 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+				Root WebApplicationContext: initialization completed in 2618 ms
+2026-07-19 21:25:55.283 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper -
+				HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-19 21:25:55.371 [restartedMain] INFO  org.hibernate.Version -
+				HHH000412: Hibernate ORM core version 6.6.2.Final
+2026-07-19 21:25:55.419 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator -
+				HHH000026: Second-level cache disabled
+2026-07-19 21:25:55.818 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo -
+				No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-19 21:25:55.869 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Starting...
+2026-07-19 21:25:57.759 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+				HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: 04dd6a37-e5cc-4e33-af8f-66a9a3acda86
+2026-07-19 21:25:57.764 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Start completed.
+2026-07-19 21:25:57.932 [restartedMain] WARN  org.hibernate.orm.deprecation -
+				HHH90000025: SQLServerDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-19 21:25:57.969 [restartedMain] INFO  o.hibernate.orm.connections.pooling -
+				HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-19 21:25:59.374 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -
+				HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-19 21:26:00.277 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -
+				Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-19 21:26:00.859 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer -
+				Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-19 21:26:00.860 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer -
+				Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-07-19 21:26:01.038 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -
+				spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-19 21:26:01.966 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -
+				LiveReload server is running on port 35729
+2026-07-19 21:26:02.000 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8080"]
+2026-07-19 21:26:02.034 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+				Tomcat started on port 8080 (http) with context path '/'
+2026-07-19 21:26:02.049 [restartedMain] INFO  c.d.boot.ProductHandlerApplication -
+				Started ProductHandlerApplication in 10.399 seconds (process running for 11.777)
+2026-07-19 21:28:43.671 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener -
+				Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-19 21:28:43.678 [Thread-5] INFO  o.s.b.w.e.tomcat.GracefulShutdown -
+				Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-19 21:28:43.680 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Pausing ProtocolHandler ["http-nio-8080"]
+2026-07-19 21:28:43.737 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown -
+				Graceful shutdown complete
+2026-07-19 21:28:43.738 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Stopping ProtocolHandler ["http-nio-8080"]
+2026-07-19 21:28:43.746 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -
+				Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-19 21:28:43.757 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown initiated...
+2026-07-19 21:28:43.764 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown completed.
+2026-07-19 21:28:43.987 [restartedMain] INFO  c.d.boot.ProductHandlerApplication -
+				Starting ProductHandlerApplication using Java 19.0.1 with PID 20500 (C:\Users\deepa\git\product-handler-Spring-boot-practice-\productHandler\target\classes started by deepa in C:\Users\deepa\git\product-handler-Spring-boot-practice-\productHandler)
+2026-07-19 21:28:43.988 [restartedMain] INFO  c.d.boot.ProductHandlerApplication -
+				No active profile set, falling back to 1 default profile: "default"
+2026-07-19 21:28:44.375 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+				Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-19 21:28:44.404 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+				Finished Spring Data repository scanning in 26 ms. Found 3 JPA repository interfaces.
+2026-07-19 21:28:44.608 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+				Tomcat initialized with port 8080 (http)
+2026-07-19 21:28:44.610 [restartedMain] INFO  o.a.c.core.AprLifecycleListener -
+				An older version [2.0.3] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+2026-07-19 21:28:44.610 [restartedMain] INFO  o.a.c.core.AprLifecycleListener -
+				Loaded Apache Tomcat Native library [2.0.3] using APR version [1.7.2].
+2026-07-19 21:28:44.611 [restartedMain] INFO  o.a.c.core.AprLifecycleListener -
+				OpenSSL successfully initialized [OpenSSL 3.0.8 7 Feb 2023]
+2026-07-19 21:28:44.611 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-19 21:28:44.612 [restartedMain] INFO  o.a.catalina.core.StandardService -
+				Starting service [Tomcat]
+2026-07-19 21:28:44.612 [restartedMain] INFO  o.a.catalina.core.StandardEngine -
+				Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-07-19 21:28:44.654 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2026-07-19 21:28:44.654 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+				Root WebApplicationContext: initialization completed in 661 ms
+2026-07-19 21:28:44.720 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper -
+				HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-19 21:28:44.726 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator -
+				HHH000026: Second-level cache disabled
+2026-07-19 21:28:44.743 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo -
+				No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-19 21:28:44.744 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-2 - Starting...
+2026-07-19 21:28:45.638 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+				HikariPool-2 - Added connection ConnectionID:11 ClientConnectionId: bfcb1aed-9c32-483c-8610-20fc4563daad
+2026-07-19 21:28:45.639 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-2 - Start completed.
+2026-07-19 21:28:45.666 [restartedMain] WARN  org.hibernate.orm.deprecation -
+				HHH90000025: SQLServerDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-19 21:28:45.670 [restartedMain] INFO  o.hibernate.orm.connections.pooling -
+				HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 15.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-19 21:28:45.789 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -
+				HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-19 21:28:46.264 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -
+				Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-19 21:28:46.453 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer -
+				Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-19 21:28:46.454 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer -
+				Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-07-19 21:28:46.514 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -
+				spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-19 21:28:46.919 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -
+				LiveReload server is running on port 35729
+2026-07-19 21:28:46.935 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8080"]
+2026-07-19 21:28:46.939 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+				Tomcat started on port 8080 (http) with context path '/'
+2026-07-19 21:28:46.946 [restartedMain] INFO  c.d.boot.ProductHandlerApplication -
+				Started ProductHandlerApplication in 3.032 seconds (process running for 176.673)
+2026-07-19 21:28:46.949 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener -
+				Condition evaluation unchanged
+2026-07-19 23:32:48.724 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool -
+				HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=2h3m32s967ms53µs400ns).
